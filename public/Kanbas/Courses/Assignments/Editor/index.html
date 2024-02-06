@@ -1,0 +1,90 @@
+<html>
+    <head></head>
+    <body>
+        <form style="display: flex; flex-direction: column; gap: 5px">
+            <label for="name">Assignment Name</label>
+            <input type="text" id="name" name="name" value="A1 - ENV + HTML" />
+
+            <textarea
+                id="description"
+                name="description"
+                placeholder="This is the assignment description."
+            ></textarea>
+
+            <label for="points">Points</label>
+            <input type="number" id="points" name="points" value="100" />
+
+            <label for="group">Assignment Group</label>
+            <select id="group" name="group">
+                <option value="assignments" selected>ASSIGNMENTS</option>
+            </select>
+
+            <label for="grade-display">Display Grade as</label>
+            <select id="grade-display" name="grade-display">
+                <option value="percentage" selected>Percentage</option>
+            </select>
+
+            <label for="submission-type">Submission Type</label>
+            <select id="submission-type" name="submission-type">
+                <option value="online" selected>Online</option>
+            </select>
+
+            <fieldset>
+                <legend>Online Entry Options</legend>
+                <label>
+                    <input type="checkbox" name="options" value="textEntry" />
+                    Text Entry
+                </label>
+                <label>
+                    <input type="checkbox" name="options" value="websiteURL" />
+                    Website URL
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="options"
+                        value="mediaRecordings"
+                    />
+                    Media Recordings
+                </label>
+                <label>
+                    <input
+                        type="checkbox"
+                        name="options"
+                        value="studentAnnotation"
+                    />
+                    Student Annotation
+                </label>
+                <label>
+                    <input type="checkbox" name="options" value="fileUploads" />
+                    File Uploads
+                </label>
+            </fieldset>
+
+            <label for="assign-to">Assign to</label>
+            <input
+                type="text"
+                id="assign-to"
+                name="assign-to"
+                value="Everyone"
+            />
+
+            <label for="due">Due</label>
+            <input type="date" id="due" name="due" value="2021-01-01" />
+
+            <label for="availabile-from">Available from</label>
+            <input
+                type="date"
+                id="availabile-from"
+                name="availabile-from"
+                value="2021-01-01"
+            />
+
+            <label for="until">Until</label>
+            <input type="date" id="until" name="until" value="2021-01-01" />
+
+            <button type="button">Cancel</button>
+            <button type="button">Save</button>
+        </form>
+    </body>
+</html>
