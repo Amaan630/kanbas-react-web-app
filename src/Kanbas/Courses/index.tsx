@@ -1,7 +1,6 @@
 import { HiMiniBars3 } from "react-icons/hi2";
 import { useLocation, useParams } from "react-router";
 import { Routes, Route, Navigate } from "react-router-dom";
-import courses from "../Database/courses.json";
 import modules from "../Database/modules.json";
 import CourseNavigation from "./Navigation";
 import "./index.css";
@@ -10,7 +9,7 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 
-function Courses() {
+function Courses({ courses }: { courses: any[] }) {
     const { pathname } = useLocation();
     const params = useParams();
     const { courseId } = params;
